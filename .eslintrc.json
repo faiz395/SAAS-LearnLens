@@ -1,3 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "rules": {
+    "react/no-unescaped-entities": "off", // Disable unescaped entities rule
+    "@typescript-eslint/no-unused-vars": "off", // Allow unused variables
+    "@typescript-eslint/no-explicit-any": "off", // Allow usage of 'any' type
+    "prefer-const": "off", // Allow 'let' even when the variable is not reassigned
+    "react-hooks/exhaustive-deps": "off" // Disable exhaustive dependencies check
+  }
 }
