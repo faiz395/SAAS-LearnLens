@@ -17,7 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      {/* @ts-ignore */}
+      <body className={inter.className} class="dark">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
